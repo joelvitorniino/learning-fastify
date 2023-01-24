@@ -40,6 +40,17 @@
   dependencies:
     fast-json-stringify "^5.0.0"
 
+"@fastify/jwt@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-6.5.0.tgz#99fa697e7114aee5039f0c8761d0b3278f74f30a"
+  integrity sha512-5fR5bRXuWurP56gy/owng3BS/3e9vA0mON1XCGLsznvsudLZUdiPaK0R8Bl5gVwFAW75iFkNOp8qgnw26Csjrw==
+  dependencies:
+    "@fastify/error" "^3.0.0"
+    "@lukeed/ms" "^2.0.0"
+    fast-jwt "^2.0.0"
+    fastify-plugin "^4.0.0"
+    steed "^1.1.3"
+
 "@fastify/send@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@fastify/send/-/send-1.0.0.tgz#248442ea1530535abf0cd609e4cc4ac360a21e4d"
@@ -191,6 +202,13 @@
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
   integrity sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==
+
+"@types/fastify-jwt@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@types/fastify-jwt/-/fastify-jwt-0.8.1.tgz#50f5ff30abd2a1f6e54b7e83480ea8c58b132228"
+  integrity sha512-/LDBMAT/2WX7WJnei28WHN5JjmfZUqgiLZ7n8ZryCz0Ddcz6zP/NVHzDG8gc5Cwj8ssAjnCRExtU2gkFL6brnA==
+  dependencies:
+    fastify-jwt "*"
 
 "@types/js-yaml@^4.0.5":
   version "4.0.5"
@@ -561,6 +579,11 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
 easy-table@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/easy-table/-/easy-table-1.1.0.tgz#86f9ab4c102f0371b7297b92a651d5824bc8cb73"
@@ -665,6 +688,15 @@ fast-jwt@^1.4.0:
     ecdsa-sig-formatter "^1.0.11"
     mnemonist "^0.39.0"
 
+fast-jwt@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-2.1.0.tgz#bc508166a6860ba623da368f35e9c750cb56b807"
+  integrity sha512-NgDiaG9BacwCwSc39MfYywnDWMTAguRNDTE5bq1Vr34Qwpv0V6nNy7AeReXfa++aH8k/z4RYbqsoy2/PLNagQw==
+  dependencies:
+    asn1.js "^5.3.0"
+    ecdsa-sig-formatter "^1.0.11"
+    mnemonist "^0.39.0"
+
 fast-querystring@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fast-querystring/-/fast-querystring-1.1.0.tgz#bb645c365db88a3b6433fb6484f7e9e66764cfb9"
@@ -721,7 +753,7 @@ fastify-cors@^6.1.0:
     http-errors "^2.0.0"
     steed "^1.1.3"
 
-fastify-jwt@^4.2.0:
+fastify-jwt@*:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/fastify-jwt/-/fastify-jwt-4.2.0.tgz#c67c3c938a8c442dd6e2720e73dac1fd810fdd2c"
   integrity sha512-wS0Wvg+5/7ZGaOJVFFIIWoMyc1Ashq9zUuVzq757R36fvXtsrEnEAaEIVFImAsDrAUIr9+PnrthMSGdVZgDk/g==
